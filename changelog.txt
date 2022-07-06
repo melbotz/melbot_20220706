@@ -1,0 +1,22 @@
+20220706
+exodus
+bookmarks
+write to gitlab
+
+20220704
+new bot
+
+20220703
+exodus genesis
+git mark init
+git mark
+index.html
+data island
+render module
+render
+use lazy git to commit
+Add gitmark.json
+css get from spux
+create changelog.txt
+link to gitmark tx
+avatar

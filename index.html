@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>20220706</title>
+    <link rel="stylesheet" href="./css/spux.css" />
+    <script type="application/json" id="data">
+      {
+        "@id": "",
+        "birth": "7/6/2022, 13:05:58",
+        "energy": 99800,
+        "address": "bJdLtBTz1C1NNNCbjTTdmN3cufh4U3Duy2",
+        "gitmark": {
+          "@id": "gitmark:9ba9f9eeced406a7ea2b7c13614bf747c1091a8746cdbba73cebe231663621fd:0",
+          "genesis": "gitmark:9ba9f9eeced406a7ea2b7c13614bf747c1091a8746cdbba73cebe231663621fd:0",
+          "nick": "melbot_20220706",
+          "package": "./package.json",
+          "repository": "./"
+        },
+        "bookmark": [
+          "https://www.reddit.com/r/EarthPorn/comments/vrqeh4/horse_shoe_canyon_arizona_oc_4032x3024/"
+        ]
+      }
+    </script>
+
+    <script type="module">
+      import { render, html } from 'https://cdn.skypack.dev/spux'
+      import 'https://cdn.skypack.dev/dior'
+
+      render(
+        html`
+          <h4>${di.data.gitmark['nick']}</h4>
+
+          <img
+            src="https://robohash.org/gitmark:9ba9f9eeced406a7ea2b7c13614bf747c1091a8746cdbba73cebe231663621fd:0"
+          />
+
+          <pre>
+
+                  Name: ${di.data.gitmark['nick'] + '\n'}
+                  Birth: ${di.data.birth} ${'\n'}
+                  Energy: ${di.data.energy} Marks ${'\n'}
+                  Address: <a href="https://chainz.cryptoid.info/marks/address.dws?${di
+            .data.address}.htm" target="_blank">${di.data.address}</a>
+
+
+          </pre>
+          <h4>Activity</h4>
+          <pre>
+      <a
+                  href="https://gitmark.info/${di.data.gitmark['@id'].split(
+            ':'
+          )[1]}"
+                  target="_blank"
+                  >Genesis</a
+                >
+                  </pre>
+
+          <h4>Bookmarks</h4>
+          <pre>
+                  <a href="${di.data.bookmark[0]}" target="_blank">${di.data
+            .bookmark[0]}</a>
+                </pre>
+
+          <a
+            href="https://gitmark.info/${di.data.gitmark['@id'].split(':')[1]}"
+            target="_blank"
+            >${di.data.gitmark['@id']}</a
+          >
+        `,
+        document.body
+      )
+
+      console.log(di.data)
+    </script>
+  </head>
+  <body></body>
+</html>
