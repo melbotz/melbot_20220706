@@ -1,4 +1,9 @@
 20220706
+new bot
+previous link
+new bookmark
+
+20220705
 exodus
 bookmarks
 write to gitlab
