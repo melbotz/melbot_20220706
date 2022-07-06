@@ -2,6 +2,9 @@
 new bot
 previous link
 new bookmark
+todo.txt
+exodus.txt
+init.txt
 
 20220705
 exodus
