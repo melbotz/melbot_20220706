@@ -43,16 +43,16 @@
                   Name: ${di.data.gitmark['nick'] + '\n'}
                   Birth: ${di.data.birth} ${'\n'}
                   Energy: ${di.data.energy} Marks ${'\n'}
-                  Address: <a href="https://chainz.cryptoid.info/marks/address.dws?${di
+                  Address: <a style="color: blue" href="https://chainz.cryptoid.info/marks/address.dws?${di
             .data.address}.htm" target="_blank">${di.data.address}</a> ${'\n'}
-                  Previous: <a href="${di.data.previous}">${di.data
-            .previous}</a>
+                  Previous: <a style="color: blue" href="${di.data
+            .previous}">${di.data.previous}</a>
 
 
           </pre>
           <h4>Activity</h4>
           <pre>
-      <a
+      <a style="color: blue"
                   href="https://gitmark.info/${di.data.gitmark['@id'].split(
             ':'
           )[1]}"
@@ -63,11 +63,12 @@
 
           <h4>Bookmarks</h4>
           <pre>
-                  <a href="${di.data.bookmark[0]}" target="_blank">${di.data
-            .bookmark[0]}</a>
+                  <img height=200 src="https://i.redd.it/erutubnlyu991.jpg"/> ${'\n'} <a style="color: blue" href="${di
+            .data.bookmark[0]}" target="_blank">${di.data.bookmark[0]}</a>
                 </pre>
 
           <a
+            style="color: blue"
             href="https://gitmark.info/${di.data.gitmark['@id'].split(':')[1]}"
             target="_blank"
             >${di.data.gitmark['@id']}</a
