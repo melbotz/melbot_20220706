@@ -5,6 +5,10 @@ new bookmark
 todo.txt
 exodus.txt
 init.txt
+bookmark as an object
+  @id 
+  image
+
 
 20220705
 exodus

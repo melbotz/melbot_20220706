@@ -2,3 +2,9 @@ todo
 
 multiple bookmarks
 navbar
+use linked objects
+app layout
+json schema
+vocabs
+nostr
+styles, link colour

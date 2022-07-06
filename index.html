@@ -20,7 +20,10 @@
           "repository": "./"
         },
         "bookmark": [
-          "https://www.reddit.com/r/EarthPorn/comments/vsezbj/sometimes_real_life_really_does_look_like_a/"
+          {
+            "@id": "https://www.reddit.com/r/EarthPorn/comments/vsezbj/sometimes_real_life_really_does_look_like_a/",
+            "image": "https://i.redd.it/erutubnlyu991.jpg"
+          }
         ],
         "previous": "../melbot_20220705/"
       }
@@ -29,6 +32,8 @@
     <script type="module">
       import { render, html } from 'https://cdn.skypack.dev/spux'
       import 'https://cdn.skypack.dev/dior'
+
+      var bookmarks = di.data.bookmark
 
       render(
         html`
@@ -63,8 +68,10 @@
 
           <h4>Bookmarks</h4>
           <pre>
-                  <img height=200 src="https://i.redd.it/erutubnlyu991.jpg"/> ${'\n'} <a style="color: blue" href="${di
-            .data.bookmark[0]}" target="_blank">${di.data.bookmark[0]}</a>
+                  <img height=200 src="${bookmarks[0]
+            .image}"/> ${'\n'} <a style="color: blue" href="${bookmarks[0][
+            '@id'
+          ]}" target="_blank">${bookmarks[0]['@id']}</a>
                 </pre>
 
           <a

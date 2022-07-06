@@ -12,6 +12,7 @@ previous exodus to new address, grab tx
 change gitmark tx
 change name and date
 change amount
+link to previous bot
 change bookmark
 check in
 push
